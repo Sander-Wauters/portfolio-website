@@ -1,0 +1,47 @@
+{
+  "name": "portfolio-website-web",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Portfolio of Sander Wauters",
+  "main": "src/index.ts",
+  "repository": "git@github.com:Sander-Wauters/portfolio-website.git",
+  "author": "Sander-Wauters <sander1352@hotmail.be>",
+  "license": "GPL-3.0-only",
+  "private": false,
+  "scripts": {
+    "dev": "yarn vite",
+    "build": "yarn vite build",
+    "typecheck": "tsc --noemit",
+    "lint": "eslint --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/qs": "^6.14.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.4",
+    "eslint": "^10.0.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^17.3.0",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "i18next": "^25.8.11",
+    "i18next-http-backend": "^3.0.2",
+    "qs": "^6.15.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.1",
+    "react-i18next": "^16.5.4",
+    "react-router-dom": "^7.13.0",
+    "swr": "^2.4.0",
+    "zod": "^4.3.6"
+  }
+}
