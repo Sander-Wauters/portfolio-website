@@ -1,0 +1,41 @@
+@use "./var.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure that the footer is always at the bottom of the screen. */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
+
+/* Sets the usable width of the element */
+.container {
+  margin-left: var.$ml;
+  margin-right: var.$mr;
+
+  @media (min-width: var.$screen-sm-min) {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: var.$screen-sm-width;
+    max-width: var.$screen-sm-width;
+  }
+  @media (min-width: var.$screen-md-min) {
+    min-width: var.$screen-md-width;
+    max-width: var.$screen-md-width;
+  }
+  @media (min-width: var.$screen-lg-min) {
+    min-width: var.$screen-lg-width;
+    max-width: var.$screen-lg-width;
+  }
+  @media (min-width: var.$screen-xl-min) {
+    min-width: var.$screen-xl-width;
+    max-width: var.$screen-xl-width;
+  }
+}
